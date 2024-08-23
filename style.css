@@ -1,0 +1,1054 @@
+*,
+html {
+
+	scroll-behavior: smooth !important;
+}
+
+html {
+	overflow-x: hidden;
+	background: rgb(200, 35, 32);
+	background: linear-gradient(180deg, rgba(200, 35, 32, 1) 0%, rgba(218, 84, 0, 1) 50%, rgba(242, 150, 11, 1) 100%);
+}
+
+/* SCROLLBAR */
+
+.col_left::-webkit-scrollbar {
+	display: none;
+}
+
+body::-webkit-scrollbar {
+	width: 0.6em;
+}
+
+body::-webkit-scrollbar-track {
+	background-color: black;
+	opacity: 0;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #d6dee1;
+	border-radius: 10px;
+	border: 2px solid transparent;
+	background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #a8bbbf;
+}
+
+
+/* HAMBURGER MENU */
+
+.topnav {
+	z-index: 200;
+	width: 100%;
+	height: 15vh;
+	overflow: hidden;
+	background-color: transparent;
+	position: fixed;
+
+	top: 0;
+	right: 0;
+	transition: 0.3s;
+}
+
+.topnav.scrolled {
+	background-color: #C50303;
+	/* Background color when scrolled */
+}
+
+.topnav #myLinks {
+	z-index: 99;
+	opacity: 0;
+
+	width: 100%;
+	height: 100%;
+	padding-top: 10%;
+
+	background-color: black;
+
+	text-align: center;
+
+	transition: 0s;
+}
+
+.topnav a {
+	width: 100%;
+	color: white;
+	text-decoration: none;
+	font-size: 25px;
+	font-family: Segoe UI;
+	display: block;
+
+
+	/* HOVER OFF */
+	-webkit-transition: color 0.7s;
+	-moz-transition: color 0.7s;
+	/* For older Firefox versions */
+	-o-transition: color 0.7s;
+	/* For older Opera versions */
+	transition: color 0.7s;
+	/* Standard property */
+
+}
+
+.topnav a.icon {
+	background: transparent;
+	color: white;
+	font-size: 4vh;
+	display: block;
+
+	margin: 5.5vh;
+	width: 20vh;
+	height: 15vh;
+	top: -0.5vh;
+	right: -15vh;
+	z-index: 99;
+	position: fixed;
+	padding-right: 0;
+}
+
+.topnav a.icon:hover {
+	color: black;
+}
+
+.topnav a:hover {
+	background-color: transparent;
+	color: #C50303;
+
+	transition: 0.5s;
+}
+
+/* NAVBAR */
+
+.topnav.color-1 {
+	background-color: #cc2f18;
+}
+
+.topnav.color-2 {
+	background-color: #d74d04;
+}
+
+.topnav.color-3 {
+	background-color: #e77706;
+}
+
+/*FONTS*/
+
+@font-face {
+	font-family: Segoe UI;
+	src: url("Fonts/typold/The Northern Block Ltd - Typold ExtraThin.otf");
+}
+
+@font-face {
+	font-family: Druk;
+	src: url("Fonts/Druk Family/Druk-Bold-Trial.otf");
+}
+
+/* TEXTUAL CONTENT */
+
+h1 {
+	font-family: Druk;
+	opacity: 100%;
+	font-size: 1700%;
+	padding-left: 5%;
+}
+
+h2 {
+	font-family: Segoe UI;
+	opacity: 100%;
+}
+
+h3 {
+	font-family: Segoe UI;
+	opacity: 100%;
+}
+
+h4 {
+	font-family: Segoe UI;
+	opacity: 100%;
+}
+
+p {
+	font-family: Segoe UI;
+	color: whitesmoke;
+	float: central;
+}
+
+/* BANNER AT THE TOP + ICON */
+
+.top_icon {
+	margin: 5.5vh;
+	width: 20vh;
+	height: 15vh;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	position: fixed;
+
+	background-image: url('assets/icon.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	/* HOVER OFF */
+	-webkit-transition: transform 1s;
+	-moz-transition: transform 1s;
+	/* For older Firefox versions */
+	-o-transition: transform 1s;
+	/* For older Opera versions */
+	transition: transform 1s;
+	/* Standard property */
+
+}
+
+.top_icon:hover {
+	transform: scale(1.075);
+
+	transition: 0.5s;
+}
+
+.top_banner {
+
+	z-index: -99;
+	margin-top: -10px;
+	margin-left: -10px;
+	width: 110vw;
+	height: 100vw;
+	background-image: url('pocetna/POCETNA1.jpg');
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+
+}
+
+/* The horror, THE FLOATING HEADS! */
+
+.chico_head {
+	z-index: 95;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 4vw;
+	left: 11%;
+
+	width: 30vw;
+	height: 30vw;
+
+	background-image: url('assets/head_chico.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	/* HOVER OFF */
+	-webkit-transition: transform 1s;
+	-moz-transition: transform 1s;
+	/* For older Firefox versions */
+	-o-transition: transform 1s;
+	/* For older Opera versions */
+	transition: transform 1s;
+	/* Standard property */
+}
+
+.chico_head:hover {
+	transform: scale(1.05);
+
+	transition: 0.5s;
+}
+
+.groucho_head {
+
+	z-index: 95;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 20.3vw;
+	left: 40%;
+
+	width: 24vw;
+	height: 24vw;
+
+	background-image: url('assets/head_groucho.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	/* HOVER OFF */
+	-webkit-transition: transform 1s;
+	-moz-transition: transform 1s;
+	/* For older Firefox versions */
+	-o-transition: transform 1s;
+	/* For older Opera versions */
+	transition: transform 1s;
+	/* Standard property */
+}
+
+.groucho_head:hover {
+	transform: scale(1.05);
+
+	transition: 0.5s;
+}
+
+.harpo_head {
+	z-index: 95;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: -1vw;
+	right: 5%;
+
+	width: 32.5vw;
+	height: 32.5vw;
+
+	background-image: url('assets/head_harpo.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	/* HOVER OFF */
+	-webkit-transition: transform 1s;
+	-moz-transition: transform 1s;
+	/* For older Firefox versions */
+	-o-transition: transform 1s;
+	/* For older Opera versions */
+	transition: transform 1s;
+	/* Standard property */
+}
+
+.harpo_head:hover {
+	transform: scale(1.05);
+
+	transition: 0.5s;
+}
+
+/* FOR BIG CHUNKS OF CONTENT */
+
+/* UVOD, odmah ispod bannera... */
+
+.uvod {
+	width: 100%;
+	padding: 3% 5% 5% 5%;
+	margin-top: 1%;
+	margin-left: -1%;
+}
+
+.uvod h3 {
+	width: 90%;
+
+	color: white;
+}
+
+.uvod h4 {
+	font-size: 1em;
+	width: 20%;
+
+	min-height: 200px;
+	margin: 5% 1%;
+	float: left;
+	text-align: left;
+	color: white;
+}
+
+
+.uvod p {
+	width: 100%;
+	float: left;
+	margin: 3% 0%;
+
+	color: white;
+}
+
+.uvod video {
+	width: 115%;
+	margin-left: -6%;
+}
+
+/*UVOD END*/
+
+/* BACK TO TOP BUTTON */
+
+.back_to_top {
+	z-index: 95;
+	width: 10%;
+	height: 15%;
+	position: fixed;
+	bottom: -5%;
+	left: 95%;
+
+	/* HOVER OFF */
+	-webkit-transition: transform 0.2s;
+	-moz-transition: transform 0.2s;
+	/* For older Firefox versions */
+	-o-transition: transform 0.2s;
+	/* For older Opera versions */
+	transition: transform 0.2s;
+	/* Standard property */
+}
+
+.back_to_top a {
+	color: white;
+	font-size: 35px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.back_to_top a:hover {
+	color: black;
+
+	transition: 0.25s;
+}
+
+/* KOLONE */
+
+.kolona_mala {
+	float: left;
+	width: 40%;
+	padding: 2%;
+
+	color: white;
+}
+
+.kolona_mala h1 {
+	font-size: 18vw;
+}
+
+.kolona_mala h2 {
+	margin-left: 5%;
+	margin-top: -20%;
+}
+
+.kolona_mala h3 {
+	font-size: 2em;
+
+	margin-left: 5%;
+	margin-bottom: -20%;
+}
+
+.kolona_mala h4 {
+	font-size: 1.2em;
+	font-family: Segoe UI;
+	margin-left: 5%;
+}
+
+.kolona_mala p {
+	color: white;
+	font-size: 15px;
+
+	margin-left: 5%;
+}
+
+.kolona_velika {
+	float: right;
+	width: 50vw;
+	height: 100vh;
+
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.kolona_mala::after,
+.kolona_velika::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+#groucho-img {
+	width: 30%;
+	background-color: black;
+}
+
+/* BIG CONTENT WRAP */
+
+.content_wrap {
+	width: 102%;
+
+	margin-left: -2%;
+	padding-top: 5%;
+	padding-left: 5%;
+
+	/*background-color: /*neka se ona mijenja, u zavisnosti od tog koji je brat na redu...*/
+	;
+	background-size: 25%;
+	background-blend-mode: luminosity;
+	background-repeat: repeat;
+
+	/* Color fonta */
+	color: white;
+}
+
+.content_wrap::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.content_wrap h1 {
+	font-family: Druk;
+	color: white;
+}
+
+.content_wrap p {
+	width: 90%;
+	color: white;
+}
+
+.content_wrap video {
+	width: 115%;
+	margin-left: -5%;
+}
+
+/* FOOTER */
+
+.footer {
+	width: 100%;
+	padding: 5% 0;
+}
+
+.footer p {
+	width: 100%;
+	font-size: 18px;
+	color: white;
+	font-family: Segoe UI;
+	text-align: center;
+}
+
+/* BG IMAGES */
+
+.back_image_left {
+	z-index: 94;
+	width: 60%;
+	height: auto;
+	position: relative;
+	float: left;
+	margin-left: -2%;
+
+	/* HOVER OFF */
+	-webkit-transition: transform 0.65s;
+	-moz-transition: transform 0.65s;
+	/* For older Firefox versions */
+	-o-transition: transform 0.65s;
+	/* For older Opera versions */
+	transition: transform 0.65s;
+	/* Standard property */
+
+}
+
+.back_image_left_lessanim {
+	z-index: 94;
+	width: 60%;
+	height: auto;
+	position: relative;
+	float: left;
+	margin-left: -2%;
+
+	/* HOVER OFF */
+	-webkit-transition: transform 0.65s;
+	-moz-transition: transform 0.65s;
+	/* For older Firefox versions */
+	-o-transition: transform 0.65s;
+	/* For older Opera versions */
+	transition: transform 0.65s;
+	/* Standard property */
+
+}
+
+.back_image_right {
+	z-index: 101;
+	position: relative;
+	right: -50vw;
+	top: -7vw;
+	/* HOVER OFF */
+	-webkit-transition: transform 0.65s;
+	-moz-transition: transform 0.65s;
+	/* For older Firefox versions */
+	-o-transition: transform 0.65s;
+	/* For older Opera versions */
+	transition: transform 0.65s;
+	/* Standard property */
+
+}
+
+
+.back_image_left:hover {
+	transform: scale(1.035);
+	transform: rotate(7deg);
+	transition: 0.45s;
+
+}
+
+.back_image_left_lessanim:hover {
+	width: 100%;
+	transform: scale(1.035);
+	transform: rotate(1deg);
+	transition: 0.45s;
+
+}
+
+
+.back_image_right:hover {
+	transform: scale(1.035);
+	transform: rotate(-2deg);
+
+	transition: 0.45s;
+}
+
+.back_image_left::after,
+.back_image_left_lessanim::after,
+.back_image_right::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/* PHOTO CONTENT */
+
+.image_container {
+
+	float: left;
+	margin: 2%;
+	width: 25%;
+	height: 30vw;
+	min-width: 300px;
+	min-height: 250px;
+	max-width: 500px;
+	max-height: 450px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	/* Osim ako negdje odgovara nešto drugo */
+	;
+}
+
+.image_container_double {
+	float: left;
+	margin: 2% 2.5% 0 2.5%;
+	width: 54%;
+	height: 30vw;
+	min-width: 635px;
+	min-height: 250px;
+	max-width: 1040px;
+	max-height: 450px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	/* Osim ako negdje odgovara nešto drugo */
+	;
+}
+
+.image_container_half {
+	float: left;
+	margin: 2%;
+	width: 39.5%;
+	height: 30vw;
+
+	max-width: 600px;
+	max-height: 450px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	/* Osim ako negdje odgovara nešto drugo */
+	;
+}
+
+.text_container {
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	position: relative;
+	background-color: black;
+
+	/* HOVER OFF */
+	-webkit-transition: transform 1s;
+	-moz-transition: transform 1s;
+	/* For older Firefox versions */
+	-o-transition: transform 1s;
+	/* For older Opera versions */
+	transition: transform 1s;
+	/* Standard property */
+
+
+	/* Flexbox centering */
+	display: flex;
+	justify-content: center;
+	/* Center horizontally */
+	align-items: center;
+	/* Center vertically */
+}
+
+.grid_container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 95.5%;
+	height: auto;
+	justify-content: center;
+	position: relative;
+	left: -30px;
+	padding: 0;
+}
+
+.text_container p {
+	font-size: 15px;
+	font-family: 'Segoe UI', sans-serif;
+	color: white;
+	text-align: center;
+	margin: 0;
+	/* Remove any margin around the text */
+	width: auto;
+	/* Let the text determine the width */
+	box-sizing: border-box;
+	/* Ensure padding/margins are calculated properly */
+}
+
+.image_container video {
+	width: 99.9999%;
+	height: 100%;
+	margin-left: 0px;
+}
+
+
+.text_container:hover {
+	opacity: 1;
+
+	transition: 0.4s;
+}
+
+.text_container_double {
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	position: relative;
+	background-color: black;
+
+	/* HOVER OFF */
+	-webkit-transition: transform 1s;
+	-moz-transition: transform 1s;
+	/* For older Firefox versions */
+	-o-transition: transform 1s;
+	/* For older Opera versions */
+	transition: transform 1s;
+	/* Standard property */
+
+
+	/* Flexbox centering */
+	display: flex;
+	justify-content: center;
+	/* Center horizontally */
+	align-items: center;
+	/* Center vertically */
+}
+
+.text_container_double p {
+	font-size: 15px;
+	font-family: 'Segoe UI', sans-serif;
+	color: white;
+	text-align: center;
+	margin: 0;
+	/* Remove any margin around the text */
+	width: auto;
+	/* Let the text determine the width */
+	box-sizing: border-box;
+	/* Ensure padding/margins are calculated properly */
+}
+
+
+.text_container_double:hover {
+	opacity: 1;
+
+	transition: 0.4s;
+}
+
+.image_container::after,
+.image_container_double::after,
+.image_container_half::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.harp {
+	margin-top: 40%;
+	margin-left: -40%;
+}
+
+.harpo_text {
+	width: calc(100% - 49%);
+	font-size: 19px;
+	position: relative;
+	margin: 5%;
+	float: right;
+	margin-top: calc(-41vw + 10vh);
+	padding-right: 5%;
+	color: white;
+}
+
+.chico_text {
+	float: left;
+	width: 40%;
+	padding: 2%;
+	font-size: 19px;
+	color: white;
+}
+
+.chico_hat {
+	z-index: 101;
+	position: relative;
+	right: -50vw;
+	top: -30vw;
+	/* HOVER OFF */
+	-webkit-transition: transform 0.65s;
+	-moz-transition: transform 0.65s;
+	/* For older Firefox versions */
+	-o-transition: transform 0.65s;
+	/* For older Opera versions */
+	transition: transform 0.65s;
+	/* Standard property */
+
+	margin-bottom: -25vw;
+}
+
+/* Stilovi za tablet */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+
+	body {
+		font-size: 15px;
+	}
+
+	.uvod h3 {
+		text-align: justify;
+	}
+
+	.uvod h4 {
+		text-align: justify;
+		width: 42%;
+		height: 120px;
+		min-height: 50px;
+	}
+
+	.back_image_right {
+		z-index: 101;
+		position: relative;
+		right: -40vw;
+		top: -18vh;
+	}
+
+	.back_image_left {
+		z-index: 100;
+		position: relative;
+		left: -5vw;
+		top: -20vh;
+		width: 80vw;
+		height: 80vh;
+	}
+
+	.kolona_mala h4 {
+		font-size: 19px;
+		min-width: 500px;
+
+	}
+
+	.kolona_velika {
+		margin-top: 30px;
+	}
+
+	.harp {
+		margin-top: -15%;
+		margin-left: 0%;
+	}
+
+
+	.harpo_text {
+		width: calc(100% - 50%);
+		font-size: 19px;
+		position: relative;
+		float: right;
+		margin-top: -35vw;
+		color: white;
+	}
+
+	.back_image_left_lessanim {
+		top: -10vw;
+		width: 100%;
+	}
+
+	.back_image_left_lessanim:hover {
+		width: 150%;
+
+	}
+
+	.chico_text {
+		float: left;
+		width: 40%;
+		padding: 2%;
+		margin-top: -80px;
+	}
+
+	.chico_hat {
+		z-index: 101;
+		position: relative;
+		right: -50vw;
+		top: -30vw;
+		/* HOVER OFF */
+		-webkit-transition: transform 0.65s;
+		-moz-transition: transform 0.65s;
+		/* For older Firefox versions */
+		-o-transition: transform 0.65s;
+		/* For older Opera versions */
+		transition: transform 0.65s;
+		/* Standard property */
+
+		margin-bottom: -25vw;
+	}
+}
+
+/* Stilovi za mobilne uredjaje */
+@media only screen and (max-width: 600px) {
+
+	body {
+		font-size: 15px;
+	}
+
+	.uvod h3 {
+		text-align: justify;
+	}
+
+	.uvod h4 {
+		text-align: justify;
+		width: 90%;
+		height: 120px;
+		min-height: 50px;
+		margin:1.5% 0;
+	}
+
+	.back_image_right {
+		z-index: 101;
+		position: relative;
+		right: -10vw;
+		top: -38vh;
+	}
+
+	.back_image_left {
+		z-index: 100;
+		position: relative;
+		left: -5vw;
+		top: -50vh;
+		width: 80vw;
+		height: 80vh;
+	}
+
+	.groucho_text{
+		margin-top:-50vw;
+	}
+
+	.kolona_mala h4 {
+		font-size: 19px;
+		min-width: 80vw;
+	}
+
+	.kolona_velika {
+		margin-top: 30px;
+	}
+
+	.harp {
+		margin-top: -15%;
+		margin-left: 0%;
+	}
+
+
+	.harpo_text {
+		width: 80%;
+		font-size: 19px;
+		position: relative;
+		float: left;
+		margin-top: -80vw;
+		color: white;
+	}
+
+	.back_image_left_lessanim {
+		top: -30vw;
+		width: 150%;
+	}
+
+	.back_image_left_lessanim:hover {
+		width: 200%;
+
+	}
+
+	.chico_text {
+		float: left;
+		width: 85%;
+		padding: 2%;
+		margin-top: -20px;
+	}
+
+	.chico_hat {
+		z-index: 101;
+		position: relative;
+		right: -28vw;
+		top: 30vw;
+		/* HOVER OFF */
+		-webkit-transition: transform 0.65s;
+		-moz-transition: transform 0.65s;
+		/* For older Firefox versions */
+		-o-transition: transform 0.65s;
+		/* For older Opera versions */
+		transition: transform 0.65s;
+		/* Standard property */
+
+		margin-bottom: -25vw;
+	}
+
+	.grid_container{
+		margin-left:10px;
+	}
+	.image_container {
+		
+		float: left;
+		margin: 2%;
+		width: 80%;
+		height: 30vw;
+		min-width: 0px;
+		min-height: 0xp;
+		max-width: 500px;
+		max-height: 450px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		/* Osim ako negdje odgovara nešto drugo */
+		;
+	}
+	
+	.image_container_double {
+		float: left;
+		margin: 2%;
+		width: 80%;
+		height: 30vw;
+		min-width: 0px;
+		min-height: 0xp;
+		max-width: 500px;
+		max-height: 450px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		/* Osim ako negdje odgovara nešto drugo */
+		;
+	}
+	
+	.image_container_half {
+		float: left;
+		margin: 2%;
+		width: 39.5%;
+		height: 30vw;
+	
+		max-width: 600px;
+		max-height: 450px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		/* Osim ako negdje odgovara nešto drugo */
+		;
+	}
+	
+}
