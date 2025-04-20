@@ -1,7 +1,7 @@
 
 # 🎭 Marx Brothers Website
 
-The **Marx Brothers Website** is a fully responsive site showcasing the iconic comedy troupe. The website is optimized for different screen sizes, ensuring a seamless experience across all devices. The project focuses on improving user experience while maintaining a consistent design.
+The **Marx Brothers Website** is a fully responsive site showcasing the iconic comedy troupe. The website is optimized for different screen sizes, ensuring a seamless experience across all devices. The project focuses on improving user experience while maintaining a consistent design. This project was a freelance project.
 
 ---
 
