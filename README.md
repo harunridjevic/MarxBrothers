@@ -38,8 +38,8 @@ This is the third section:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/marx-brothers-website.git
-   cd marx-brothers-website
+   git clone https://github.com/harunridjevic/marxbrothers.git
+   cd marxbrothers
    ```
 2. Open the project folder and open `index.html` in any browser to see the website in action.
 
